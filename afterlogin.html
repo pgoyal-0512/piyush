@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sider Menu Bar CSS</title>
+    <script type="text/javascript">
+      function myFunction(item){
+        var i;
+        for(i=0;i<4;i++){
+          if(i==item){
+            document.getElementsByTagName("li")[item].style.borderLeft='3px solid #ef10bb';
+            document.getElementsByTagName("li")[item].style.backgroundColor='#8a0a7a';
+
+          }
+          if(i!=item){
+            document.getElementsByTagName("li")[i].style.borderLeft='3px solid transparent';
+            document.getElementsByTagName("li")[i].style.backgroundColor='#69185f';
+          }
+        }
+      }
+      function ourFunction(){
+        var x=document.getElementById("saved");
+        var y=document.getElementById("save1");
+        if(x.style.display==="none"){
+          x.style.display="block";
+          y.style.display="none";
+        }
+        else{
+          x.style.display="none";
+          y.style.display="block";
+        }
+      }
+      function heartFunction(){
+        var x=document.getElementById("heart");
+        var y=document.getElementById("heartliked");
+        if(x.style.display==="none"){
+          x.style.display="block";
+          y.style.display="none";
+        }
+        else{
+          x.style.display="none";
+          y.style.display="block";
+        }
+      }
+      function followFun(item){
+        var x=document.getElementsByClassName("followed")[item];
+        var y=document.getElementsByClassName("unfollowed")[item];
+        if(x.style.display==="none"){
+          x.style.display="block";
+          y.style.display="none";
+        }
+        else{
+          x.style.display="none";
+          y.style.display="block";
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+    <header>My App</header>
+  <ul id="ab">
+<li id="home"><a href="#" onclick='myFunction(0)'><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+<li><a href="profile.html" onclick='myFunction(1)'><i class="fa fa-user" aria-hidden="true"></i>Profile</a></li>
+<li><a href="developer.html" onclick='myFunction(2)'><i class="fa fa-male" aria-hidden="true"></i>Developer</a></li>
+<li><a href="login.html" onclick='myFunction(3)'><i class="fa fa-sign-out" aria-hidden="true"></i>Log Out</a></li>
+  </ul>
+    </div>
+
+      <div class="head">
+        <div class="float-child">
+        <div id="city"> CitySocial </div>
+      </div>
+      <div class="float-child">
+        <div id="story">
+          <a href="tech.jpg"> <img src="krish4.png" alt="Story" width="50px"></a>
+        </div>
+        <div id="name">
+          Your story
+        </div>
+      </div>
+      <div class="float-child">
+        <div id="story2">
+          <a href="back3.jpg"> <img src="nature.png" alt="Story" width="50px"></a>
+        </div>
+        <div id="name2">
+          naturesbasket
+        </div>
+      </div>
+      </div>
+      <section id="section1">
+      <div class="main">
+      <div class="maincontent">
+        <img src="boy.png" alt="Story" width="50px">
+        <p>life.of.school_</p>
+        <span id="save" onclick="ourFunction()">
+        <i id="save1" class="fa fa-bookmark-o" aria-hidden="true"></i>
+        <i id="saved" class="fa fa-bookmark" aria-hidden="true"></i>
+      </span>
+        <div id="car">
+          <img src="car.jpg" alt="CAR" width="600px" height="395px">
+        </div>
+        <div class="bottom">
+          <div id="like" onclick="heartFunction()">
+          <i id="heart" class="fa fa-heart-o" aria-hidden="true"></i>
+          <i id="heartliked" class="fa fa-heart" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="bottom">
+        <div id="comment">
+        <i class="fa fa-comment-o" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="bottom">
+        <div id="numblike">
+        831 likes
+        </div>
+      </div>
+      </div>
+      </div>
+      <div class="main">
+        <div class="suggestion">
+            <div>
+              <img id="piyush" src="krish4.png" alt="myprofile" width="50px">
+              <p id="user">piyush.goyal_123</p>
+              <p id="fullname">Piyush Goyal</p>
+            </div>
+          <p id="suggest"> Suggestions For You</p>
+          <div>
+          <div class="follower">
+            <div class="a">
+              <img src="akshay.png" alt="myprofile" width="33px">
+            </div>
+          </div>
+          <div class="follower">
+            <div class="b">
+              <p class="user1">akshay.garg_28</p>
+              <p class="follow1">Follows you</p>
+            </div>
+          </div>
+          <div class="follower">
+            <span class="c" onclick="followFun(0)">
+              <p class="followed">Follow back</p>
+              <p class="unfollowed">following</p>
+            </span>
+            </div>
+          </div>
+
+        <div style="float: left">
+        <div class="follower">
+          <div class="a">
+            <img src="hardik.png" alt="myprofile" width="33px">
+          </div>
+        </div>
+        <div class="follower">
+          <div class="b">
+            <p class="user1">hardik.sharma_45</p>
+            <p class="follow1">Followed by shikha</p>
+          </div>
+        </div>
+        <div class="follower">
+          <span class="c" onclick="followFun(1)">
+            <p class="followed">Follow</p>
+            <p class="unfollowed">following</p>
+          </span>
+          </div>
+        </div>
+        <div style="float: left">
+        <div class="follower">
+          <div class="a">
+            <img src="ankit.png" alt="myprofile" width="33px">
+          </div>
+        </div>
+        <div class="follower">
+          <div class="b">
+            <p class="user1">ankit.gunwal_12</p>
+            <p class="follow1">Follows you</p>
+          </div>
+        </div>
+        <div class="follower">
+          <span class="c" onclick="followFun(2)">
+            <p class="followed">Follow back</p>
+            <p class="unfollowed">following</p>
+          </span>
+          </div>
+        </div>
+        <div style="float: left">
+        <div class="follower">
+          <div class="a">
+            <img src="raman.png" alt="myprofile" width="33px">
+          </div>
+        </div>
+        <div class="follower">
+          <div class="b">
+            <p class="user1">raman.garg_6910</p>
+            <p class="follow1">Followed by aman </p>
+          </div>
+        </div>
+        <div class="follower">
+          <span class="c" onclick="followFun(3)">
+            <p class="followed">Follow</p>
+            <p class="unfollowed">following</p>
+          </span>
+          </div>
+        </div>
+          </div>
+        </div>
+    </section>
+
+</body>
+</html>

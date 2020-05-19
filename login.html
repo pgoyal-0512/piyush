@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> LOGIN PAGE </title>
+    <script type="text/javascript">
+      function validateForm(){
+        var str=document.myForm.mail.value;
+        var i,a,flag=0;
+        a=str.length;
+        for(i=0;i<a;i++){
+          if(str[i]=="@"){
+            flag=1;
+          }
+        }
+        if(flag==0){
+          alert("Incorrect e-mail id");
+          return false;
+        }
+      }
+    function myFunction(){
+      var x=document.getElementById("password");
+      var y=document.getElementById("hide1");
+      var z=document.getElementById("hide2");
+
+      if(x.type==="password"){
+        x.type="text";
+        y.style.display="block";
+        z.style.display="none";
+      }
+      else{
+        x.type="password";
+        y.style.display="none";
+        z.style.display="block";
+      }
+    }
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bellota&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style media="screen">
+      h2{
+        font-family: 'Lobster', cursive;
+        font-variant: small-caps;
+        text-align: center;
+        color: white;
+      }
+      #a{
+        background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("back.jpg");
+        background-position: center;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+      }
+      #b{
+        background-attachment: fixed;
+        margin:30px 12% 7% 32%;
+        height:380px;
+        width:410px;
+        border-radius: 25px;
+        text-align: center;
+        background: rgba(0,0,0,0.6);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        color:white;
+      }
+      #c{
+        font-family: 'Bellota', cursive;
+        color:white;
+        text-align: center;
+        text-shadow: 3px 2px 0px #832cbc;
+      }
+      #e{
+        font-size: 30px;
+        padding-top: 20px;
+        text-align: center;
+      }
+      #mail,#password{
+        width:285px;
+        border:none;
+        outline: none;
+        overflow: hidden;
+        font-size: 16px;
+        font-style: italic;
+        opacity:0.5;
+        background: transparent;
+        color:white;
+        background: none;
+      }
+      #f{
+        text-align: right;
+        margin-right: 20px;
+        margin-top: 10px;
+      }
+      a:link,a:visited{
+        color:white;
+        text-decoration: none;
+      }
+      a:hover{
+        color:#0f4c75;
+        text-decoration: none;
+      }
+      .p{
+        width:300px;
+        height:35px;
+        padding-left: 10px;
+        margin-top: 20px;
+        padding-top: 0.7px;
+        padding-bottom: 1px;
+        padding-right: 10px;
+        background-color: #46255d;
+        color:white;
+        font-size: 22px;
+        font-family: 'Open Sans', sans-serif;
+        cursor:pointer;
+        transition: background-color 1.3s;
+      }
+      .p:hover{
+        background-color:#793ba5;
+      }
+      #ac{
+        margin-top: 20px;
+      }
+      .input{
+        border-bottom: 2px solid  #370459;
+        width:330px;
+        margin-left: 40px;
+        margin-bottom: 20px;
+        padding-bottom: 3px;
+      }
+      ::placeholder{
+        color:#ccc;
+      }
+      .fa{
+        margin-right: 10px;
+      }
+      .eye{
+        position: absolute;
+      }
+      #hide1{
+        display:none;
+      }
+    </style>
+  </head>
+  <body id="a">
+    <h1 id="c"> CitySocial </h1>
+    <h2><u> Hello Friends </u></h2>
+    <div id="b">
+      <p id="e"> <img src="profile1.png" alt="LOGIN" height="60" width="60"><br>Login to Your Account </p>
+      <form  name="myForm" action="afterlogin.html" method="post" onsubmit="return validateForm()">
+        <div class="input">
+        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        <input id="mail" type="text" name="mail" placeholder="Enter your E-mail"  required>
+      </div>
+        <br>
+        <div class="input">
+          <i class="fa fa-key" aria-hidden="true"></i>
+        <input id="password" type="password" name="password" placeholder="password" required>
+        <span class="eye" onclick="myFunction()">
+        <i id="hide1" class="fa fa-eye"></i>
+        <i id="hide2" class="fa fa-eye-slash"></i>
+      </span>
+        </div>
+        <div id="s">
+          <input class="p" type="submit" name="ab" value="Log In">
+        </div>
+        <div id="ac">
+          <span style="opacity:0.7"> Don't have an account?&nbsp;</span> <a href="sign.html"> Sign up</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

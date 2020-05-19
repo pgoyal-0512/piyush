@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+ul #menuprofile{
+  border-left: 3px solid #ef10bb;
+  background-color: #8a0a7a;
+}
+ul #home{
+  background-color: #69185f;
+  border: none;
+}
+.head #city1{
+  font-family: 'Bellota', cursive;
+  margin-left: 360px;
+  padding-top: 10px;
+  color:white;
+  font-size: 35px;
+  letter-spacing: 1px;
+  transition: .5s;
+}
+.bottom{
+  transition: .5s;
+}
+#left{
+  float: left;
+}
+#right{
+  width:300px;
+  float: right;
+  background-color: #f8ecf8;
+  height: 535px;;
+  border-left: 1px solid #39023a;
+}
+#right-top{
+  height: 50px;
+  background-color: #d6b2d6;
+  transition: 1s;
+  border-bottom: 1px solid #39023a;
+  border-left: 1px solid #39023a;
+}
+#right-top:hover{
+  background-color: #39023a ;
+  transition: 1s;
+}
+
+#right-top h2{
+  padding-top: 10px;
+  color: #8451a5c7;
+  margin-left: 110px;
+  letter-spacing: 1px;
+  color: #39023a;
+}
+.section2{
+  margin-left: 170px;
+  margin-top: 30px;
+  width:600px;
+}
+#check:checked ~ .bottom{
+  margin-left: 280px;
+  transition: all .5s;
+}
+#check:checked ~ .bottom #right{
+  display: none;
+}
+.profile{
+  float: left;
+}
+
+.profile #username{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  margin-top: 10px;
+  margin-left: 100px;
+  margin-bottom: 20px;
+  font-size: 27px;
+}
+.profile .below #post{
+  margin-left: 100px;
+  float: left;
+  margin-right: 30px;
+}
+.profile #yourname{
+  margin-left: 102px;
+  margin-top: 20px;
+  font-family: 'Jost', sans-serif;
+}
+#hr{
+  margin-top: 220px;
+  width: 720px;
+  margin-left: 130px;
+}
+#post1 i{
+  margin-right: 10px;
+}
+#post1{
+  margin-left: 50px;
+  margin-top: 20px;
+  text-decoration: underline;
+  font-weight: 600;
+}
+.images {
+  margin-left: 180px;
+  margin-top: 30px;
+}
+.img{
+  float: left;
+}
+.images a img{
+  border-radius: 2%;
+  margin-right: 20px;
+}
+.images a img:hover{
+  filter: brightness(60%);
+  background-color: #f8ecf8;
+  transition: 0.5s;
+}
+
+.foll{
+  float: left;
+}
+.foll .foll-a{
+  margin-left: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-right: 18px;
+}
+.foll .foll-a img{
+  border: 1.5px  solid #c0392b;
+  border-radius: 50%;
+}
+.foll .foll-b{
+  margin-top: 13px;
+}
+.foll .foll-b .foll-user1{
+  color: rgba(var(--f75,38,38,38),1);
+  font-family: 'Jost', sans-serif;
+  font-size: 15px;
+}
+.foll .foll-c{
+  margin-top: 13px;
+  margin-left: 75px;
+}
+.foll .foll-c .foll-time1{
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}

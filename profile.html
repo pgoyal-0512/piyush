@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sider Menu Bar CSS</title>
+    <script type="text/javascript">
+      function myFunction(item){
+        var i;
+        for(i=0;i<4;i++){
+          if(i==item){
+            document.getElementsByTagName("li")[item].style.borderLeft='3px solid #ef10bb';
+            document.getElementsByTagName("li")[item].style.backgroundColor='#8a0a7a';
+
+          }
+          if(i!=item){
+            document.getElementsByTagName("li")[i].style.borderLeft='3px solid transparent';
+            document.getElementsByTagName("li")[i].style.backgroundColor='#69185f';
+          }
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+    <header>My App</header>
+  <ul id="ab">
+<li id="home"><a href="afterlogin.html" onclick='myFunction(0)'><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+<li id="menuprofile"><a href="#" onclick='myFunction(1)'><i class="fa fa-user" aria-hidden="true"></i>Profile</a></li>
+<li><a href="developer.html" onclick='myFunction(2)'><i class="fa fa-male" aria-hidden="true"></i>Developer</a></li>
+<li><a href="login.html" onclick='myFunction(3)'><i class="fa fa-sign-out" aria-hidden="true"></i>Log Out</a></li>
+  </ul>
+    </div>
+
+      <div class="head">
+        <div class="float-child">
+        <div id="city1"> CitySocial </div>
+      </div>
+      </div>
+      <div class="bottom">
+      <div id="left">
+      <div class="section2">
+        <div class="profile">
+          <div id="image">
+            <img src="krish4.png" alt="PIYUSH" width="150px">
+          </div>
+        </div>
+        <div class="profile">
+          <div id="username">
+            piyush.goyal_123
+          </div>
+          <div class="below">
+            <div id="post">
+              <b>8</b> posts
+            </div>
+          </div>
+          <div class="below">
+            <div id="friend">
+              <b>6</b> friends
+            </div>
+          </div>
+          <div id="yourname">
+            Piyush Goyal
+          </div>
+        </div>
+      </div>
+      <div id="hr">
+        <hr>
+      </div>
+      <div id="post1">
+        <i class="fa fa-picture-o" aria-hidden="true"></i>
+        POSTS
+      </div>
+      <div class="images">
+        <div class="img">
+        <div id="dhoni">
+        <a href="dhoni.jpg"> <img src="dhoni.jpg" alt="DHONI" width="170px" height="200px"> </a>
+        </div>
+        </div>
+        <div class="img">
+        <div id="gate">
+        <a href="gate.jpg"> <img src="gate.jpg" alt="INDIA" width="170px" height="200px"> </a>
+        </div>
+        </div>
+        <div class="img">
+        <div id="sachin">
+        <a href="sachin.jpg"> <img src="sachin.jpg" alt="SACHIN" width="170px" height="200px"> </a>
+        </div>
+        </div>
+        <div class="img">
+        <div id="maska">
+        <a href="maska.jpg"> <img src="maska.jpg" alt="MASKA" width="170px" height="200px"> </a>
+        </div>
+        </div>
+        <br>
+        <div class="img">
+        <div id="carry">
+        <a href="carry.jpg"> <img src="carry.jpg" alt="CARRY" width="170px" height="200px"> </a>
+        </div>
+        </div>
+        <div class="img">
+        <div id="apj">
+        <a href="apj.jpg"> <img src="apj.jpg" alt="APJ" width="170px" height="200px"> </a>
+        </div>
+        </div>
+        <div class="img">
+        <div id="techno">
+        <a href="techno.cms"> <img src="techno.cms" alt="CARRY" width="170px" height="200px"> </a>
+        </div>
+        </div>
+        <div class="img">
+        <div id="code">
+        <a href="code.jpg"> <img src="code.jpg" alt="CODE" width="170px" height="200px"> </a>
+        </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      <div class="bottom">
+        <div id="right">
+          <div id="right-top">
+            <h2>Friends</h2>
+          </div>
+          <div>
+          <div class="foll">
+            <div class="foll-a">
+              <img src="ankit2.png" alt="myprofile" width="28px">
+            </div>
+          </div>
+          <div class="foll">
+            <div class="foll-b">
+              <p class="foll-user1">Ankit Gehlaut</p>
+            </div>
+          </div>
+          <div class="foll">
+            <div class="foll-c">
+              <p class="foll-time1">18 h</p>
+            </div>
+          </div>
+        </div>
+      <div style="float: left">
+      <div class="foll">
+        <div class="foll-a">
+          <img src="arman.png" alt="myprofile" width="28px">
+        </div>
+      </div>
+      <div class="foll">
+        <div class="foll-b">
+          <p class="foll-user1">Arman Tewatia</p>
+        </div>
+      </div>
+      <div class="foll">
+        <div class="foll-c">
+          <p class="foll-time1">2 h</p>
+        </div>
+      </div>
+    </div>
+    <div style="float: left">
+    <div class="foll">
+      <div class="foll-a">
+        <img src="virat.png" alt="myprofile" width="28px">
+      </div>
+    </div>
+      <div class="foll">
+        <div class="foll-b">
+          <p class="foll-user1">Virat Raj</p>
+        </div>
+      </div>
+     </div>
+     <div style="float: left">
+     <div class="foll">
+       <div class="foll-a">
+         <img src="gautam.png" alt="myprofile" width="28px">
+       </div>
+     </div>
+     <div class="foll">
+       <div class="foll-b">
+         <p class="foll-user1">Gautam Dagar</p>
+       </div>
+     </div>
+     <div class="foll">
+       <div class="foll-c">
+         <p class="foll-time1">1 h</p>
+       </div>
+     </div>
+     </div>
+     <div style="float: left">
+     <div class="foll">
+      <div class="foll-a">
+        <img src="abhay.png" alt="myprofile" width="28px">
+      </div>
+    </div>
+    <div class="foll">
+      <div class="foll-b">
+        <p class="foll-user1">Abhay Gupta</p>
+      </div>
+    </div>
+      </div>
+      <div style="float: left">
+      <div class="foll">
+        <div class="foll-a">
+          <img src="deepak.png" alt="myprofile" width="28px">
+        </div>
+      </div>
+      <div class="foll">
+        <div class="foll-b">
+          <p class="foll-user1">Deepak Singh</p>
+        </div>
+      </div>
+      <div class="foll">
+        <div class="foll-c">
+          <p class="foll-time1">52 m</p>
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
+</body>
+</html>
