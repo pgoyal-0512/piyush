@@ -184,7 +184,7 @@
     <h2><u> Hello Friends </u></h2>
     <div id="b">
       <p id="e"> <img src="profile1.png" alt="SIGN UP" height="60" width="60"><br>Sign Up Here </p>
-      <form  name="myForm" action="afterlogin.html" method="post" onsubmit="return validateForm()">
+      <form  name="myForm" action="afterlogin.html">
         <div class="in">
         <span class="input1">
         <input id="sign1" type="text" name="fName" placeholder="First Name" onblur="myFunction()" required>
@@ -207,7 +207,7 @@
         <input class="sign" type="password" name="repassword" placeholder="Re-Enter Password" required>
         </div>
         <div id="s">
-          <input class="p" type="submit" name="ab" value="Sign Up">
+          <input class="p" type="button" name="ab" value="Sign Up" onclick="validateForm()">
         </div>
         <div id="ac">
           <span style="opacity:0.7"> Already have an account?&nbsp;</span> <a href="index.html"> Sign in</a>
