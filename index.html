@@ -147,7 +147,7 @@
     <h2><u> Hello Friends </u></h2>
     <div id="b">
       <p id="e"> <img src="profile1.png" alt="LOGIN" height="60" width="60"><br>Login to Your Account </p>
-      <form  name="myForm" action="afterlogin.html" method="post" onsubmit="return validateForm()">
+      <form  name="myForm" action="afterlogin.html">
         <div class="input">
         <i class="fa fa-envelope-o" aria-hidden="true"></i>
         <input id="mail" type="text" name="mail" placeholder="Enter your E-mail"  required>
@@ -162,7 +162,7 @@
       </span>
         </div>
         <div id="s">
-          <input class="p" type="submit" name="ab" value="Log In">
+          <input class="p" type="button" name="ab" value="Log In" onclick="validateForm()">
         </div>
         <div id="ac">
           <span style="opacity:0.7"> Don't have an account?&nbsp;</span> <a href="sign.html"> Sign up</a>
